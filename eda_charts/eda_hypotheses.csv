@@ -1,0 +1,6 @@
+id,hypothesis,investigation
+H1,Subscription rate may differ across job categories.,Compare subscription rates by job.
+H2,Subscription rate may differ across education levels.,Compare subscription rates by education.
+H3,Customer age may be associated with subscription outcome.,Compare age distributions for yes and no.
+H4,Subscription rate may vary by contact month.,Compare subscription rates across months.
+H5,Previous campaign contact history may be associated with subscription.,Compare outcomes for previously contacted and never-contacted customers.

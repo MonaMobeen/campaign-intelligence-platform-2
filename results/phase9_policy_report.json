@@ -1,0 +1,32 @@
+{
+    "phase": 9,
+    "policy_version": "campaign_policy_v1",
+    "business_assumptions": {
+        "positive_value": 100,
+        "call_cost": 5,
+        "maximum_capacity": 0.2,
+        "minimum_probability_for_positive_expected_value": 0.05
+    },
+    "capacity_comparison": {
+        "10_percent": {
+            "capacity_limit": 0.1,
+            "selected_customers": 411,
+            "precision": 0.22871046228710462,
+            "recall": 0.1902834008097166,
+            "expected_net_value": 3787.7829200822634,
+            "realized_net_value": 7345.0
+        },
+        "20_percent": {
+            "capacity_limit": 0.2,
+            "selected_customers": 823,
+            "precision": 0.23693803159173754,
+            "recall": 0.39473684210526316,
+            "expected_net_value": 6234.5592153266525,
+            "realized_net_value": 15385.0
+        }
+    },
+    "total_customers": 4119,
+    "selected_customers": 823,
+    "selection_rate": 0.19980577810148095,
+    "created_at": "2026-11-11T12:52:00.832997"
+}

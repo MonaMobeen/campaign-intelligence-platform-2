@@ -1,0 +1,15 @@
+test,status,detail
+API artifacts loaded,PASS,loaded
+Classification model available,PASS,
+Regression model available,PASS,
+Health check,PASS,"{'ready': True, 'model_version': 'campaign_v1', 'schema_version': '1.0', 'artifact_status': 'loaded'}"
+Single prediction returns probability,PASS,
+Single prediction returns duration,PASS,
+Batch prediction returns two valid records,PASS,2
+Missing fields rejected,PASS,
+Forbidden duration field rejected,PASS,
+Invalid age rejected,PASS,
+Duplicate IDs rejected,PASS,
+Repeated prediction consistency,PASS,0.09614453
+Model reload prediction consistency,PASS,0.09614453
+Batch size limit enforced,PASS,

@@ -1,0 +1,22 @@
+{
+    "phase": "Lab B - Unsupervised Learning",
+    "training_records": 24712,
+    "validation_records": 4119,
+    "features_used": 52,
+    "kmeans_clusters": 4,
+    "cluster_sizes": {
+        "0": 9507,
+        "2": 7802,
+        "3": 7004,
+        "1": 399
+    },
+    "silhouette_score_sample": 0.036642563830329405,
+    "pca_explained_variance": [
+        0.14577147056453013,
+        0.1327925184324673
+    ],
+    "pca_total_explained_variance": 0.2785639889969974,
+    "training_anomalies": 2387,
+    "validation_anomalies": 1369,
+    "note": "Clustering and anomaly labels are exploratory signals, not verified customer categories or proof of errors."
+}

@@ -1,0 +1,9 @@
+{
+    "selected_model": "Dummy Median",
+    "MAE_seconds": 164.36974993930565,
+    "RMSE_seconds": 267.2282395674819,
+    "Median_absolute_error_seconds": 98.0,
+    "R2": -0.16003669700242873,
+    "estimated_total_workload_minutes": 13867.3,
+    "handling_time_assumption_seconds": 30
+}

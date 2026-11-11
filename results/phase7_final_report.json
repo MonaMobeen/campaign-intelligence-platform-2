@@ -1,0 +1,18 @@
+{
+    "phase": "Phase 7 - Imbalance Handling and Hyperparameter Tuning",
+    "selected_model": "Logistic Regression",
+    "selected_strategy": "none",
+    "best_config_id": 6,
+    "C": 0.1,
+    "fit_intercept": false,
+    "mean_average_precision": 0.06183084576890085,
+    "ap_standard_deviation": 0.010193168763642929,
+    "mean_fit_seconds": 0.37597497304280597,
+    "total_tuning_fits": 72,
+    "selection_reason": "Highest mean Average Precision across three chronological folds. Oversampling and class weighting did not improve the baseline strategy.",
+    "limitations": [
+        "Average Precision remains low.",
+        "Chronological target prevalence changes substantially.",
+        "Results are validation evidence, not proof of deployment readiness."
+    ]
+}

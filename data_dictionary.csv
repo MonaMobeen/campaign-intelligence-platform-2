@@ -1,0 +1,23 @@
+Column,Meaning,Data_Type,Project_Role,Availability_or_Reason
+age,Customer age,Numeric,Set A,Available before call
+job,Customer job type,Categorical,Set A,Available before call
+marital,Marital status,Categorical,Set A,Available before call
+education,Education level,Categorical,Set A,Available before call
+default,Has credit in default?,Categorical,Set A,Available before call
+housing,Has housing loan?,Categorical,Set A,Available before call
+loan,Has personal loan?,Categorical,Set A,Available before call
+contact,Contact communication type,Categorical,Set A,Assumed known before call
+month,Last contact month,Categorical,Set A,Assumed known before call
+day_of_week,Last contact day,Categorical,Set A,Assumed known before call
+duration,Last call duration in seconds,Numeric,Excluded,Known only after call; leakage risk
+campaign,"Contacts during current campaign, including current call",Numeric,Excluded,Use campaign - 1 as prior_attempts
+pdays,Days since previous campaign contact; 999 means never contacted,Numeric,Set A,Previous campaign history
+previous,Contacts before current campaign,Numeric,Set A,Previous campaign history
+poutcome,Previous campaign outcome,Categorical,Set A,Previous campaign history
+emp.var.rate,Employment variation rate,Numeric,Set B only,Timing availability needs verification
+cons.price.idx,Consumer price index,Numeric,Set B only,Timing availability needs verification
+cons.conf.idx,Consumer confidence index,Numeric,Set B only,Timing availability needs verification
+euribor3m,Three-month Euribor rate,Numeric,Set B only,Timing availability needs verification
+nr.employed,Number of employees indicator,Numeric,Set B only,Timing availability needs verification
+y,Whether customer subscribed: yes/no,Categorical,Target,Prediction target
+record_id,Unique row identifier added by us,Integer,Metadata,Not a model feature

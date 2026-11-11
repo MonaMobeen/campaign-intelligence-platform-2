@@ -1,0 +1,5 @@
+severity,area,name,message
+WARNING,feature_drift,contact,Feature PSI is 1.3902
+WARNING,feature_drift,month,Feature PSI is 8.6205
+WARNING,feature_drift,poutcome,Feature PSI is 1.3542
+WARNING,prediction_drift,subscription_probability,Prediction PSI is 0.8601

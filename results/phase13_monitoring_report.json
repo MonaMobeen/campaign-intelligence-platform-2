@@ -1,0 +1,49 @@
+{
+    "phase": 13,
+    "reference_records": 24712,
+    "current_records": 4119,
+    "monitoring_metrics": {
+        "average_precision": 0.2258856949672853,
+        "brier_score": 0.10458880384726621,
+        "actual_positive_rate": 0.11993202233551833,
+        "average_predicted_probability": 0.0640162944860512,
+        "prediction_psi": 0.8601004935273485
+    },
+    "features_monitored": 13,
+    "features_with_psi_warning": 3,
+    "alert_count": 4,
+    "alerts": [
+        {
+            "severity": "WARNING",
+            "area": "feature_drift",
+            "name": "contact",
+            "message": "Feature PSI is 1.3902"
+        },
+        {
+            "severity": "WARNING",
+            "area": "feature_drift",
+            "name": "month",
+            "message": "Feature PSI is 8.6205"
+        },
+        {
+            "severity": "WARNING",
+            "area": "feature_drift",
+            "name": "poutcome",
+            "message": "Feature PSI is 1.3542"
+        },
+        {
+            "severity": "WARNING",
+            "area": "prediction_drift",
+            "name": "subscription_probability",
+            "message": "Prediction PSI is 0.8601"
+        }
+    ],
+    "thresholds": {
+        "feature_psi_warning": 0.2,
+        "prediction_psi_warning": 0.2,
+        "missing_rate_change_warning": 0.05,
+        "minimum_average_precision": 0.15,
+        "maximum_brier_score": 0.15
+    },
+    "important_note": "This is a historical monitoring simulation using the training partition as reference and policy validation as current data. In production, monitor incoming data continuously and evaluate performance when delayed labels become available."
+}

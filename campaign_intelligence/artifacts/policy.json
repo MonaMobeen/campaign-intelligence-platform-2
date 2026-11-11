@@ -1,0 +1,8 @@
+{
+    "policy_version": "campaign_policy_v1",
+    "capacity": 0.2,
+    "positive_value": 100,
+    "call_cost": 5,
+    "threshold": 0.5,
+    "tie_break": "original_request_order"
+}

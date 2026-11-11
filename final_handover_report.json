@@ -1,0 +1,209 @@
+{
+    "project": "Campaign Intelligence - ML Engineering Capstone",
+    "created_at": "2026-11-11T13:04:35.625378",
+    "dataset": "UCI Bank Marketing - bank-additional-full.csv",
+    "dataset_rows": 41188,
+    "target": "y",
+    "classification_model": "Calibrated Logistic Regression",
+    "regression_model": "Selected using forward-fold MAE",
+    "business_policy": {
+        "capacity_limit": 0.2,
+        "positive_value_assumption": 100,
+        "call_cost_assumption": 5
+    },
+    "confirmed_user_shared_evidence": {
+        "phase_8_calibration": "Completed; AP 0.2259 on policy validation",
+        "lab_A_regression": "Completed; Dummy Median selected",
+        "phase_12_reliability": "14 tests passed, 0 failed",
+        "phase_12_latency_ms_per_record": 1.117
+    },
+    "evidence_file_checks": {
+        "Phase 1": {
+            "files": {
+                "data_manifest.json": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 2": {
+            "files": {
+                "availability_contract.md": true,
+                "data_dictionary.csv": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 3": {
+            "files": {
+                "split_manifest.json": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 4": {
+            "files": {
+                "results/data_quality_report.json": false
+            },
+            "all_expected_files_present": false
+        },
+        "Phase 5": {
+            "files": {
+                "models": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 6": {
+            "files": {
+                "results/phase6_model_comparison.csv": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 7": {
+            "files": {
+                "results/phase7_tuning_comparison.csv": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 8": {
+            "files": {
+                "results/phase8_metrics.json": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 9": {
+            "files": {
+                "results/phase9_campaign_queue.csv": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 10": {
+            "files": {
+                "results/phase10_freeze_manifest.json": true,
+                "results/phase10_final_test_predictions.csv": true
+            },
+            "all_expected_files_present": true
+        },
+        "Lab A": {
+            "files": {
+                "results/labA_regression_report.json": true,
+                "models/labA_duration_regression.joblib": true
+            },
+            "all_expected_files_present": true
+        },
+        "Lab B": {
+            "files": {
+                "results/labB_report.json": true,
+                "models/labB_kmeans.joblib": true,
+                "models/labB_pca.joblib": true,
+                "models/labB_isolation_forest.joblib": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 11": {
+            "files": {
+                "campaign_intelligence/api.py": true,
+                "campaign_intelligence/cli.py": true,
+                "campaign_intelligence/README.md": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 12": {
+            "files": {
+                "results/phase12_test_results.csv": true,
+                "results/phase12_reliability_report.json": true
+            },
+            "all_expected_files_present": true
+        },
+        "Phase 13": {
+            "files": {
+                "results/phase13_monitoring_report.json": true,
+                "results/phase13_feature_drift.csv": true,
+                "results/phase13_alerts.csv": true
+            },
+            "all_expected_files_present": true
+        },
+        "Failure Drills 1\u20138": {
+            "files": {
+                "results/failure_drills/incident_log_part1.csv": true
+            },
+            "all_expected_files_present": true
+        },
+        "Failure Drills 9\u201316": {
+            "files": {
+                "results/failure_drills/incident_log_part2.csv": false
+            },
+            "all_expected_files_present": false
+        }
+    },
+    "important_limitations": [
+        "The earlier leakage demonstration used records from the full dataset, including the final test period. Final test is not a pristine untouched holdout.",
+        "The final test result must not be presented as an untouched independent deployment estimate.",
+        "Regression baseline outperformed the more complex regression models.",
+        "Business value and call cost are teaching assumptions, not proven causal effects.",
+        "Phase completion requires checking the corresponding evidence files and outputs."
+    ],
+    "files_collected": [
+        "availability_contract.md",
+        "campaign_intelligence/README.md",
+        "campaign_intelligence/__pycache__/api.cpython-313.pyc",
+        "campaign_intelligence/api.py",
+        "campaign_intelligence/artifacts/artifact_manifest.json",
+        "campaign_intelligence/artifacts/duration_model.joblib",
+        "campaign_intelligence/artifacts/policy.json",
+        "campaign_intelligence/artifacts/schema.json",
+        "campaign_intelligence/artifacts/subscription_model.joblib",
+        "campaign_intelligence/cli.py",
+        "campaign_intelligence/requirements.txt",
+        "data/raw/bank-additional-full.csv",
+        "data_dictionary.csv",
+        "data_manifest.json",
+        "eda_charts/chart_01_target_distribution.png",
+        "eda_charts/chart_02_age_distribution.png",
+        "eda_charts/chart_03_age_by_target.png",
+        "eda_charts/chart_04_job_subscription_rate.png",
+        "eda_charts/chart_05_education_subscription_rate.png",
+        "eda_charts/chart_06_marital_subscription_rate.png",
+        "eda_charts/chart_07_month_subscription_rate.png",
+        "eda_charts/chart_08_pdays_status.png",
+        "eda_charts/eda_hypotheses.csv",
+        "labB_plots/pca_customer_clusters.png",
+        "leakage_experiment_review.md",
+        "models/calibrated_logistic_regression.joblib",
+        "models/labA_duration_regression.joblib",
+        "models/labB_isolation_forest.joblib",
+        "models/labB_kmeans.joblib",
+        "models/labB_pca.joblib",
+        "models/labB_preprocessor.joblib",
+        "models/phase8_base_logistic_regression.joblib",
+        "results/failure_drills/incident_log_part1.csv",
+        "results/labA_regression_comparison.csv",
+        "results/labA_regression_fold_results.csv",
+        "results/labA_regression_predictions.csv",
+        "results/labA_regression_report.json",
+        "results/labB_cluster_profile.csv",
+        "results/labB_report.json",
+        "results/labB_validation_outputs.csv",
+        "results/phase10_age_subgroup_report.csv",
+        "results/phase10_feature_importance.csv",
+        "results/phase10_final_test_predictions.csv",
+        "results/phase10_freeze_manifest.json",
+        "results/phase12_latency_benchmark.csv",
+        "results/phase12_reliability_report.json",
+        "results/phase12_test_report.json",
+        "results/phase12_test_results.csv",
+        "results/phase13_alerts.csv",
+        "results/phase13_feature_drift.csv",
+        "results/phase13_monitoring_report.json",
+        "results/phase6_fold_results.csv",
+        "results/phase6_model_comparison.csv",
+        "results/phase7_final_report.json",
+        "results/phase7_imbalance_comparison.csv",
+        "results/phase7_imbalance_fold_results.csv",
+        "results/phase7_selected_candidates.csv",
+        "results/phase7_tuning_comparison.csv",
+        "results/phase7_tuning_fold_results.csv",
+        "results/phase8_metrics.json",
+        "results/phase8_policy_validation_predictions.csv",
+        "results/phase9_campaign_queue.csv",
+        "results/phase9_policy_report.json",
+        "split_manifest.json",
+        "temporal_availability_review.md"
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "phase": 12,
+    "total_tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "tests": [
+        {
+            "test": "API artifacts loaded",
+            "status": "PASS",
+            "detail": "loaded"
+        },
+        {
+            "test": "Classification model available",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Regression model available",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Health check",
+            "status": "PASS",
+            "detail": "{'ready': True, 'model_version': 'campaign_v1', 'schema_version': '1.0', 'artifact_status': 'loaded'}"
+        },
+        {
+            "test": "Single prediction returns probability",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Single prediction returns duration",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Batch prediction returns two valid records",
+            "status": "PASS",
+            "detail": "2"
+        },
+        {
+            "test": "Missing fields rejected",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Forbidden duration field rejected",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Invalid age rejected",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Duplicate IDs rejected",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Repeated prediction consistency",
+            "status": "PASS",
+            "detail": "0.09614453"
+        },
+        {
+            "test": "Model reload prediction consistency",
+            "status": "PASS",
+            "detail": "0.09614453"
+        },
+        {
+            "test": "Batch size limit enforced",
+            "status": "PASS",
+            "detail": ""
+        }
+    ],
+    "latency": {
+        "records_tested": 100,
+        "total_seconds": 0.1117149719993904,
+        "milliseconds_per_record": 1.117149719993904,
+        "valid_records": 100
+    }
+}

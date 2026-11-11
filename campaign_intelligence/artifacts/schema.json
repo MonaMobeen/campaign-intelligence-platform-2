@@ -1,0 +1,44 @@
+{
+    "schema_version": "1.0",
+    "model_version": "campaign_v1",
+    "feature_columns": [
+        "age",
+        "job",
+        "marital",
+        "education",
+        "default",
+        "housing",
+        "loan",
+        "contact",
+        "month",
+        "day_of_week",
+        "previous",
+        "poutcome",
+        "previously_contacted"
+    ],
+    "numeric_columns": [
+        "age",
+        "previous",
+        "previously_contacted"
+    ],
+    "categorical_columns": [
+        "job",
+        "marital",
+        "education",
+        "default",
+        "housing",
+        "loan",
+        "contact",
+        "month",
+        "day_of_week",
+        "poutcome"
+    ],
+    "forbidden_fields": [
+        "y",
+        "duration",
+        "campaign",
+        "pdays",
+        "record_id"
+    ],
+    "maximum_batch_size": 1000
+}

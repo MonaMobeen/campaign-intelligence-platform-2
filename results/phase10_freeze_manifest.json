@@ -1,0 +1,36 @@
+{
+    "phase": 10,
+    "model": "Calibrated Logistic Regression",
+    "model_configuration": {
+        "C": 0.1,
+        "fit_intercept": false,
+        "calibration": "sigmoid"
+    },
+    "feature_set": "Set A with previously_contacted replacing pdays",
+    "forbidden_feature": "duration",
+    "policy_version": "campaign_policy_v1",
+    "capacity_limit": 0.2,
+    "business_value_assumption": 100,
+    "call_cost_assumption": 5,
+    "final_test_records": 8238,
+    "final_metrics": {
+        "average_precision": 0.44981769234529595,
+        "roc_auc": 0.6499697365839098,
+        "precision_at_05": 0.60431654676259,
+        "recall_at_05": 0.03307086614173228,
+        "f1_at_05": 0.06270996640537514,
+        "balanced_accuracy_at_05": 0.5117091782446114,
+        "brier_score": 0.25410619739788354,
+        "log_loss": 0.8571924206891788,
+        "true_negative": 5643,
+        "false_positive": 55,
+        "false_negative": 2456,
+        "true_positive": 84,
+        "campaign_selected": 1647,
+        "campaign_selection_rate": 0.19992716678805536,
+        "campaign_precision": 0.5166970248937462,
+        "campaign_recall": 0.3350393700787402
+    },
+    "known_limitation": "Earlier leakage demonstration used records from the full dataset, including the final test period. Therefore the final test is not a pristine untouched holdout for strict deployment claims.",
+    "created_at": "2026-11-11T12:53:15.946569"
+}

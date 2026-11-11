@@ -1,0 +1,14 @@
+feature,type,psi,reference_missing_rate,current_missing_rate,missing_rate_change
+age,numeric,0.04913973106482558,0.0,0.0,0.0
+job,categorical,0.09742041557337847,0.0,0.0,0.0
+marital,categorical,0.012498493351510074,0.0,0.0,0.0
+education,categorical,0.02804354499534869,0.0,0.0,0.0
+default,categorical,0.06216752925550768,0.0,0.0,0.0
+housing,categorical,0.019196656438489994,0.0,0.0,0.0
+loan,categorical,0.0011833143875919056,0.0,0.0,0.0
+contact,categorical,1.3902401286485275,0.0,0.0,0.0
+month,categorical,8.620462918139275,0.0,0.0,0.0
+day_of_week,categorical,0.1318942343011493,0.0,0.0,0.0
+previous,numeric,0.0,0.0,0.0,0.0
+poutcome,categorical,1.3541818615953003,0.0,0.0,0.0
+previously_contacted,numeric,0.0,0.0,0.0,0.0
